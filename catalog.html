@@ -86,8 +86,8 @@
     </header>
 
     <main class="main-inner">
-      <header class="inner-hader">
-        <h1 class="intro-catalog-monopods">Моноподы для селфи</h1>
+      <header class="inner-header">
+        <h1 class="inner-header-title">Моноподы для селфи</h1>
 
         <!--ХЛЕБНЫЕ КРОШКИ-->
         <ol class="breadcrumbs-list">
@@ -115,11 +115,11 @@
             <div class="catalog-filter-price">
               <label class="price-min-label">
                 <span class="filter-price">от</span>
-                <input class="price-min-input price-input-disabled" type="number" name="price-min" value="0" min="0">
+                <input class="price-input price-input-disabled" type="number" name="price-min" value="0" min="0">
               </label>
               <label class="price-max-label">
                 <span class="filter-price">до</span>
-                <input class="price-max-input price-input-disabled" type="number" name="price-max" value="5000" min="0">
+                <input class="price-input price-input-disabled" type="number" name="price-max" value="5000" min="0">
               </label>
             </div>
 
@@ -181,29 +181,31 @@
         </form>
 
         <!--КАТАЛОГ ТОВАРОВ-->
-          <h2 class="catalog-products-title">Сортировка:</h2>
+        <h2 class="catalog-products-title">Сортировка:</h2>
 
-          <div class="select-control-products">
-            <select class="select-control select-control-disabled" name="select-sort" aria-label="Сортировка">
-              <option class="select-control" value="popular">Популярные</option>
-              <option class="select-control" value="cheap">Дешевые</option>
-              <option class="select-control" value="expensive">Дорогие</option>
-            </select>
-          </div>
+        <div class="select-control-products">
+          <select class="select-control select-control-disabled" name="select-sort" aria-label="Сортировка">
+            <option class="select-control" value="popular">Популярные</option>
+            <option class="select-control" value="cheap">Дешевые</option>
+            <option class="select-control" value="expensive">Дорогие</option>
+          </select>
+        </div>
 
-          <div class="button-sort-products">
-            <a class="button-sort-products-more" href="#">
-              <span class="visually-hidden">Сортировать товары по возрастанию</span>
-            </a>
-            <a class="button-sort-products-less" href="#">
-              <span class="visually-hidden">Сортировать товары по убыванию</span>
-            </a>
-          </div>
+        <div class="button-sort-products">
+          <a class="button-sort-products-more" href="#">
+            <span class="visually-hidden">Сортировать товары по возрастанию</span>
+          </a>
+          <a class="button-sort-products-less" href="#">
+            <span class="visually-hidden">Сортировать товары по убыванию</span>
+          </a>
+        </div>
 
+        <div class="product-group">
           <ul class="product-list">
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-card-image" src="images/catalog/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка.">
+                <img class="product-card-image" src="images/catalog/product-1.jpg" width="360" height="380"
+                  alt="Любительская селфи-палка.">
               </a>
               <a class="product-card-link" href="#">
                 <h3 class="product-card-title">Любительская селфи-палка</h3>
@@ -212,7 +214,8 @@
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-card-image" src="images/catalog/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка .">
+                <img class="product-card-image" src="images/catalog/product-2.jpg" width="360" height="380"
+                  alt="Профессиональная селфи-палка .">
               </a>
               <a class="product-card-link" href="#">
                 <h3 class="product-card-title">Профессиональная селфи-палка</h3>
@@ -221,7 +224,8 @@
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-card-image" src="images/catalog/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка.">
+                <img class="product-card-image" src="images/catalog/product-3.jpg" width="360" height="380"
+                  alt="Непотопляемая селфи-палка.">
               </a>
               <a class="product-card-link" href="#">
                 <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
@@ -230,7 +234,8 @@
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-card-image" src="images/catalog/product-4.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной.">
+                <img class="product-card-image" src="images/catalog/product-4.jpg" width="360" height="380"
+                  alt="Селфи-палка Следуй за мной.">
               </a>
               <a class="product-card-link" href="#">
                 <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
@@ -239,14 +244,14 @@
             </li>
           </ul>
 
-          <button class="button" type="button">Загрузить еще</button>
+          <button class="button-product-list" type="button">Загрузить еще</button>
 
           <ul class="pagination" aria-label="Страницы каталога">
             <li class="pagination-item">
-              <a class="pagination-link" href="#">Назад</a>
+              <a class="pagination-link-text pagination-link-text-active" href="#">Назад</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link">1</a>
+              <a class="pagination-link pagination-link-active">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">2</a>
@@ -261,17 +266,19 @@
               <a class="pagination-link" href="#">15</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">Вперед</a>
+              <a class="pagination-link-text" href="#">Вперед</a>
             </li>
           </ul>
-        </section>
+        </div>
+      </section>
     </main>
 
     <!--ПОДВАЛ-->
     <footer class="footer-page">
 
       <a class="footer-link" href="index.html">
-        <img class="footer-img" src="images/logo/logo-yellow.svg" width="145" height="36" alt="Логотип компании Device.">
+        <img class="footer-img" src="images/logo/logo-yellow.svg" width="145" height="36"
+          alt="Логотип компании Device.">
       </a>
 
       <section class="footer-address">
@@ -323,7 +330,8 @@
       <section class="section-htmlacademy">
         <h2 class="visually-hidden">Зайдите к нам на сайт</h2>
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-          <img class="htmlacademy-img" src="images/logo/HTMLAcademy.svg" width="115" height="33" alt="Логотип HTML Academy.">
+          <img class="htmlacademy-img" src="images/logo/HTMLAcademy.svg" width="115" height="33"
+            alt="Логотип HTML Academy.">
           <span class="visually-hidden">Сайт HTML Academy</span>
         </a>
       </section>

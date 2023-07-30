@@ -334,3 +334,159 @@ body {
   text-decoration-line: underline;
   text-decoration: none;
 }
+
+/*СТРАНИЦА КАТАЛОГА*/
+
+.inner-header-title {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 50px;
+}
+
+/*ХЛЕБНЫЕ КРОШКИ*/
+
+.breadcrumbs-link {
+  color: #000000;
+  font-family: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+/*ФИЛЬТР ТОВАРОВ*/
+
+.catalog-products {
+  background-color: #F0F0F0;
+}
+
+.catalog-products-title {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.catalog-filter-title {
+  color: #000000;
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.36px;
+}
+
+.price-input,
+.filter-price {
+  color: rgb(0, 0, 0, 0.3);
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.control {
+  color: #000000;
+  font-family: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/*КАТАЛОГ ТОВАРОВ*/
+
+.select-control {
+  min-width: 141px;
+  min-height: 30px;
+  border: none;
+  color: #000000;
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  background-color: #F0F0F0;
+}
+
+.product-group {
+  background-color: #ffffff;
+}
+
+.product-card-link {
+  color: #000000;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.36px;
+  text-decoration: none;
+}
+
+.price {
+  color: #444444;
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.button-product-list {
+  min-width: 760px;
+  min-height: 55px;
+  text-align: center;
+  font-family: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  border: 3px solid #E5E5E5;
+  background-color: #ffffff;
+}
+
+.pagination {
+  background-color: #F0F0F0;
+}
+
+.pagination-link-text {
+  color: #444444;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.pagination-link-text-active {
+  opacity: 0.3;
+}
+
+.pagination-link {
+  color: rgb(68, 68, 68, 0.3);
+  font-family: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.pagination-link-active {
+opacity: 0.3;
+}
