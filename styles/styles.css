@@ -24,6 +24,12 @@
   font-display: swap;
 }
 
+*,
+*::after,
+*::before {
+box-sizing: border-box;
+}
+
 html {
   height: 100%;
 }
@@ -38,27 +44,10 @@ body {
   height: 100%;
 }
 
-.button {
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  letter-spacing: 3.6px;
-  text-transform: uppercase;
-  color: #000000;
-  border: #ffffff;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.title {
-  font-family: "Raleway", sans-serif;
-  font-size: 50px;
-  font-weight: 800;
-  line-height: 50px;
-  color: #000000;
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 /* .list-reset {
@@ -78,17 +67,85 @@ body {
   overflow: hidden;
 }
 
+.button {
+  position:relative;
+  display: inline-block;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  color: #000000;
+  border: 3px solid #e5e5e5;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button-dark {
+  border-color: 3px solid #000000;
+}
+
+.button-light {
+  z-index: 1;
+  border-color: transparent;
+}
+
+.button-light::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: -1;
+}
+
+.title {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+  color: #000000;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 /*ГЛАВНАЯ СТРАНИЦА*/
 /*ШАПКА*/
 
 .header {
+  padding-top: 20px;
   margin: 40px 140px 0px 140px;
   padding-left: 60px;
   padding-right: 60px;
   background-color: #FFE17F;
 }
 
+.header-container {
+  padding: 0 60px;
+  /* background-image: linear-gradient; */
+}
+
 /*НАВИГАЦИЯ*/
+
+.navigation-logo {
+  display: block;
+  width: 145px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.navigation-container {
+  display: grid;
+  grid-template-columns: 517px 1fr;
+  gap: 25px;
+  align-items: center;
+}
 
 .navigation-form-input {
   min-width: 517px;
