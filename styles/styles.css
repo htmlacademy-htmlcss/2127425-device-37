@@ -260,18 +260,27 @@ img {
 
 .slider-container {
   position: relative;
-  background-image: linear-gradient(#ffe17f 50px, #ffffff 50px);
+  background-image: linear-gradient(#ffe17f 150px, #ffffff 100px);
 }
 
 .slider-number {
+  position: relative;
+  top: 29px;
   margin: 0;
   color: #ffffff;
-  text-align: end;
+  text-align: right;
   font-family: inherit;
-  font-size: 60px;
+  font-size: 180px;
   font-style: normal;
   font-weight: 700;
   line-height: 30px;
+  display: flex;
+  width: 511px;
+  height: 135px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 0;
 }
 
 .slider-item {
@@ -295,6 +304,8 @@ img {
 }
 
 .slider-title {
+  bottom: 13px;
+  position: relative;
   margin-bottom: 30px;
 }
 
@@ -315,8 +326,19 @@ img {
 }
 
 .slider-specifications-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 12px 20px;
+}
+
+.slider-specifications-list-definition {
+  font-family: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0;
+  order: 1;
 }
 
 .slider-arrow {
@@ -331,13 +353,15 @@ img {
 }
 
 .slider-button-next {
+  position: relative;
   transform: rotate(180deg);
+  left: 484px;
 }
 
 .slider-arrow-controls {
   position: absolute;
-  top: 50%;
-  width: 100%;
+  left: 30px;
+  top: 211px;
 }
 
 .bullets-list {
@@ -368,7 +392,7 @@ img {
 /*ПОПУЛЯРНЫЕ КАТЕГОРИИ ТОВАРОВ*/
 
 .categories {
-  padding: 70px 0px;
+  padding: 70px 0 82px 0;
 }
 
 .categories-list {
@@ -429,31 +453,61 @@ img {
 
 /*СЕРВИС*/
 
-.services {
-  padding: 15px 0 70px;
-  background-color: #f0f0f0;
-  background-image: linear-gradient(0deg, #f0f0f0 71%, #ffffff 71%);
-}
-
 .services-container {
-  display: grid;
-  grid-template-columns: 280px, 1fr;
-  align-self: start;
+  display: flex;
+  padding: 64px 0 70px;
+  background-color: #f0f0f0;
+  background-image: linear-gradient(0deg, #f0f0f0 73.5%, #ffffff 73.5%);
 }
 
 .services-menu-button {
-  background-color: #ffffff;
+  background-color: transparent;
   border: none;
+  padding: 35px 124px 0 0;
+}
+
+.button-current:before {
+  content: "";
+  position: absolute;
+  left: 118px;
+  top: 92px;
+  display: block;
+  width: 319px;
+  height: 7px;
+  background-color: #000000;
+  transform: rotate(90deg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .services-item {
-  background-color: #F0F0F0;
   display: none;
-  padding: 74px 260px 74px 116px;
+  padding: 8.5px 260px 74px 116px;
 }
 
 .services-item-active {
   display: block;
+  background-image: url("../images/delivery.svg");
+  background-repeat: no-repeat;
+  background-position: right top 16px;
+  background-size: 136px 164px;
+}
+
+.services-menu-button {
+  width: 275px;
+  min-height: 40px;
+  padding: 10px;
+  text-align: start;
+  margin-bottom: 35px;
+}
+
+.button-current {
+  background-color: #000000;
+  color: #ffe17f;
+}
+
+.delivery-container {
+  padding: 70px 0;
 }
 
 .services-button {
@@ -470,6 +524,7 @@ img {
   letter-spacing: 4px;
   text-transform: uppercase;
   cursor: pointer;
+  padding: 0;
 }
 
 /*КОНТАКТЫ*/
@@ -478,6 +533,28 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px 96px;
+  padding-bottom: 70px;
+}
+
+.contacts-wrapper {
+  display: grid;
+  gap: 30px;
+}
+
+.contacts-title {
+  margin: 47px 0 48px;
+}
+
+.contacts-title::before {
+  content: "";
+  position: relative;
+  display: block;
+  bottom: 47px;
+  width: 84px;
+  height: 7px;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .about-item {
@@ -487,6 +564,19 @@ img {
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.36px;
+  background-image: url("../images/list.svg");
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
+  background-position: left center;
+  padding-left: 26px;
+}
+
+.about-item:nth-last-child(n+2) {
+  margin-bottom: 19px;
+}
+
+.contacts-description {
+  margin: 0;
 }
 
 .contacts-subtitle {
@@ -495,6 +585,7 @@ img {
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
+  margin: 0 0 15px;
 }
 
 .contacts-address {
@@ -507,9 +598,12 @@ img {
 }
 
 .contacts-phone {
-  text-decoration: none;
   font-style: normal;
   color: #444444;
+}
+
+.contacts-button {
+  text-align: start;
 }
 
 /*ПОДПИШИТЕСЬ НА РАССЫЛКУ*/
