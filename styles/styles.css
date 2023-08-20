@@ -939,11 +939,11 @@ img {
   grid-column: 1 / -1;
 }
 
-.product-card-new::before {
+.product-card-new::after {
   content: "";
-  position: absolute;
-  top: 540px;
-  right: 760px;
+  position: relative;
+  bottom: 470px;
+  left: 300px;
   display: block;
   width: 60px;
   height: 60px;
@@ -996,6 +996,7 @@ img {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+  padding: 15.5px 25px;
 }
 
 .pagination-link-text {
