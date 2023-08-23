@@ -17,7 +17,7 @@
         <!--НАВИГАЦИЯ-->
         <nav class="navigation">
 
-          <a class="navigation-logo" href="index.html" aria-current="page" tabindex="-1">
+          <a class="navigation-logo navigation-logo-inactive" href="index.html" aria-current="page" tabindex="-1">
             <img class="navigation-img" src="images/logo/logo.svg" width="145" height="36" alt="Логотип.">
           </a>
 
@@ -27,7 +27,7 @@
                 <input class="navigation-form-input form-disabled" type="text" name="text" placeholder="Поиск по сайту">
                 <span class="visually-hidden">Введите название товара</span>
               </label>
-              <button class="button-navigation-form button-light button" type="submit">Найти</button>
+              <button class="button-navigation-form button-dark button" type="submit">Найти</button>
             </form>
 
             <ul class="navigation-user list-reset">
@@ -277,13 +277,13 @@
 
             <ul class="services-menu-list list-reset">
               <li class="services-menu-item">
-                <button class="services-menu-button button button-light button-current" type="button">Доставка</button>
+                <button class="services-menu-button button button-current" type="button">Доставка</button>
               </li>
               <li class="services-menu-item">
-                <button class="services-menu-button button button-light" type="button">Гарантия</button>
+                <button class="services-menu-button button" type="button">Гарантия</button>
               </li>
               <li class="services-menu-item">
-                <button class="services-menu-button button button-light" type="button">Кредит</button>
+                <button class="services-menu-button button" type="button">Кредит</button>
               </li>
             </ul>
 
@@ -333,7 +333,7 @@
               <li class="about-item">ТоксБерри</li>
             </ul>
 
-            <a class="contacts-button button button-light" href="#">Подробнее о нас</a>
+            <a class="contacts-button button button-light button-more" href="#">Подробнее о нас</a>
           </div>
         </section>
 
@@ -489,7 +489,7 @@
     <dialog id="my-dialog">
       <div class="modal-container modal-container-close">
         <div class="modal modal-auth">
-          <h2 class="modal-title">Доставка под заказ</h2>
+          <h2 class="modal-title title">Доставка под заказ</h2>
 
           <form class="modal-delivery-form" action="https://echo.htmlacademy.ru" method="post">
 
@@ -499,28 +499,28 @@
                 placeholder="Введите имя" required>
             </fieldset>
 
-            <fieldset class="modal-fieldset-group modal-fieldset-email">
+            <fieldset class="modal-fieldset-group modal-fieldset-email modal-fieldset-group-error">
               <label class="modal-form-label" for="modal-email">Ваш e-mail</label>
               <input class="modal-form-input modal-form-input-email" type="email" id="modal-email" name="modal-email"
                 value="почта" placeholder="Введите адрес электронной почты" required>
-              <p class="modal-form-email-comment">Забавный у вас адрес</p>
+              <p class="modal-form-notice">Забавный у вас адрес</p>
             </fieldset>
 
             <fieldset class="modal-fieldset-group modal-fieldset-products">
               <label class="modal-form-label" for="modal-products">Что нужно привезти:</label>
-              <textarea class="modal-form-input modal-textarea-products" id="modal-products" name="modal-products"
+              <textarea class="modal-form-input modal-text-products" id="modal-products" name="modal-products"
                 placeholder="В свободной форме"></textarea>
             </fieldset>
 
             <fieldset class="modal-fieldset-group modal-fieldset-quantity">
 
               <div class="modal-quantity">
-                <label class="modal-form-label" for="input-quantity">Количество:</label>
+                <label class="modal-form-label modal-form-label-with-tooltip" for="input-quantity">Количество:</label>
 
-                <div class="modal-search-tooltip" tabindex="0">
-                  <span class="modal-search-tooltip-toggle"></span>
+                <div class="modal-tooltip" tabindex="0">
+                  <span class="modal-tooltip-toggle"></span>
                   <span class="visually-hidden">Подсказка</span>
-                  <span class="modal-search-tooltip-text" role="tooltip" id="tooltip-quantity">Постараемся найти,
+                  <span class="modal-tooltip-text" role="tooltip" id="tooltip-quantity">Постараемся найти,
                     сколько нужно. Привезём сколько получится по требованиям
                     к провозу багажа.</span>
                 </div>
@@ -528,27 +528,27 @@
 
               <div class="modal-button-quantity">
 
-                <input class="modal-form-input modal-quantity modal-field-disabled" id="input-quantity" type="number"
+                <input class="modal-form-input modal-form-input-number modal-field-disabled" id="input-quantity" type="number"
                   value="1" min="0" max="999" name="quantity" step="1" required>
 
-                <button class="modal-change-minus modal-change-button button-disabled" type="button">
-                  <span class="visually-hidden">-</span>
+                <button class="modal-change-minus modal-change-button" type="button">
+                  <span class="visually-hidden">Уменьшить количество товаров на 1</span>
                 </button>
-                <button class="modal-change-plus modal-change-button button-disabled" type="button">
-                  <span class="visually-hidden">+</span>
+                <button class="modal-change-plus modal-change-button" type="button">
+                  <span class="visually-hidden">Увеличить количество товаров на 1</span>
                 </button>
 
               </div>
             </fieldset>
 
-            <button class="modal-button button-disabled button" type="submit">Отправить</button>
+            <button class="modal-button button button-light" type="submit">Отправить</button>
           </form>
+
+          <button class="modal-close-button" id="close-dialog-btn" type="button">
+            <span class="visually-hidden">Закрыть модальное окно</span>
+          </button>
+
         </div>
-
-        <button class="modal-close-button button-disabled" id="close-dialog-btn" type="button">
-          <span class="visually-hidden">Закрыть модальное окно</span>
-        </button>
-
       </div>
     </dialog>
     <script>
