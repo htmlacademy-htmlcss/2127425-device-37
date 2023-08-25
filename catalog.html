@@ -89,7 +89,7 @@
 
           <ul class="navigation-list list-reset">
             <li class="navigation-item navigation-catalog-item">
-              <a class="navigation-link link navigation-link-catalog" href="catalog.html" aria-current="page">Каталог
+              <a class="link navigation-link-catalog" href="catalog.html" aria-current="page">Каталог
                 товаров
                 <span></span>
               </a>
@@ -100,7 +100,8 @@
                     <a class="navigation-catalog-link link" href="#">Виртуальная реальность</a>
                   </li>
                   <li class="navigation-item-catalog">
-                    <a class="navigation-catalog-link link navigation-link-current" href="catalog.html" aria-current="page">Моноподы для
+                    <a class="navigation-catalog-link link navigation-link-current" href="catalog.html"
+                      aria-current="page">Моноподы для
                       cелфи</a>
                   </li>
                   <li class="navigation-item-catalog">
@@ -167,8 +168,8 @@
 
                 <div class="range">
                   <div class="range-scale">
-                    <div class="range-bar" style="left: 0; width: 110px;">
-                      <button class="range-toggle" type="button">
+                    <div class="range-bar range-control" style="left: 0px; width: 110px;">
+                      <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Установить минимальный предел цены.</span>
                       </button>
 
@@ -179,15 +180,17 @@
                   </div>
 
                   <div class="catalog-filter-price">
-                    <label class="price-min-label">
+                    <label class="price-label">
                       <span class="filter-price">от</span>
-                      <input class="price-input price-input-min price-input-disabled" type="number" name="price-min"
-                        value="0" min="0">
+                      <span class="filter-value">0</span>
+                      <input class="price-input price-input-min price-input-disabled visually-hidden" type="number"
+                        name="price-min" value="0" min="0">
                     </label>
-                    <label class="price-max-label">
-                      <span class="filter-price">до</span>
-                      <input class="price-input price-input-disabled" type="number" name="price-max" value="5000"
-                        min="0">
+                    <label class="price-label">
+                      <span class="filter-price filter-price-max">до</span>
+                      <span class="filter-value">5000</span>
+                      <input class="price-input price-input-max price-input-disabled visually-hidden" type="number"
+                        name="price-max" value="5000" min="0">
                     </label>
                   </div>
                 </div>
@@ -274,10 +277,10 @@
               </div>
 
               <div class="button-sort-products">
-                <a class="button-sort-products-more" href="#">
+                <a class="button-sort-products-more button-sort-products-link" href="#">
                   <span class="visually-hidden">Сортировать товары по возрастанию</span>
                 </a>
-                <a class="button-sort-products-less" href="#">
+                <a class="button-sort-products-less button-sort-products-link" href="#">
                   <span class="visually-hidden">Сортировать товары по убыванию</span>
                 </a>
               </div>
@@ -329,29 +332,27 @@
 
               <button class="button-product-list button" type="button">Загрузить еще</button>
 
-              <ul class="pagination list-reset" aria-label="Страницы каталога">
-                <li class="pagination-item">
-                  <a class="pagination-link-text pagination-link-text-active" href="#">Назад</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link pagination-link-active">1</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link" href="#">2</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link" href="#">3</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link" href="#">...</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link" href="#">15</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link-text" href="#">Вперед</a>
-                </li>
-              </ul>
+              <div class="pagination">
+                <a class="pagination-button pagination-button-prev pagination-button-disabled link" href="#">Назад</a>
+                <ol class="pagination-list list-reset" aria-label="Страницы каталога">
+                  <li class="pagination-item">
+                    <a class="pagination-link pagination-link-current">1</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">2</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">3</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">...</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">15</a>
+                  </li>
+                </ol>
+                <a class="pagination-button pagination-button-next link" href="#">Вперёд</a>
+              </div>
             </div>
           </div>
         </div>
