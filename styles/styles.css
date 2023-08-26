@@ -2039,7 +2039,53 @@ input[type='number'] {
   gap: 43px 40px;
 }
 
+.product-card-item {
+  position: relative;
+}
+
 .product-card-link {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.product-card-link:active .product-card-button {
+  background-image: linear-gradient(#ffc700, #ffc700);
+  background-size: 100% 8px;
+}
+
+.product-card-link:hover .product-card-button, .product-card-link:active .product-card-button {
+  display: block;
+  background-size: 100% 8px;
+}
+
+.product-card-link:hover .product-card-img::before, .product-card-link:active .product-card-img::before, .product-card-link:hover .product-card-button, .product-card-link:active .product-card-button {
+  display: block;
+}
+
+.product-card-button {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  transform: translate(-50%, -50%);
+}
+
+.button-stroke {
+  line-height: 20px;
+  background-image: linear-gradient(#ffe17f, #ffe17f);
+  background-size: 100% 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-color: transparent;
+  transition: background-size 0.2s ease-in;
+}
+
+.product-card-description {
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -2049,14 +2095,15 @@ input[type='number'] {
   text-decoration: none;
 }
 
+.product-card-link:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
 .product-card-image {
   width: 100%;
   height: 100%;
   grid-column: 1 / -1;
-}
-
-.product-card {
-  position: relative;
 }
 
 .product-card-new::after {
@@ -2088,8 +2135,7 @@ input[type='number'] {
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.36px;
-  margin-top: 32px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .price {
@@ -2100,7 +2146,6 @@ input[type='number'] {
   font-weight: 400;
   line-height: normal;
   text-align: end;
-  margin-top: 32px;
 }
 
 .button-product-list {
