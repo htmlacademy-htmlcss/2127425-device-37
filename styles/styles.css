@@ -1733,12 +1733,16 @@ img {
 }
 
 .filter-container {
-  padding: 18px 60px 60px;
+  padding: 18px 40px 60px 60px;
 }
 
 .catalog-filter {
   display: grid;
-  gap: 35px;
+  gap: 34px;
+}
+
+.filter-title {
+  margin-bottom: 58px;
 }
 
 .catalog-filter-group {
@@ -1749,143 +1753,111 @@ img {
   border-top: 2px solid #000000;
 }
 
-.filter-title {
-  margin-bottom: 58px;
-}
-
 .catalog-filter-title {
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.36px;
-  margin: 12px 0 28px 0;
+  margin: 12px 0 16px 0;
+}
+
+.catalog-range-title {
+  margin-bottom: 28px;
 }
 
 .range {
-  height: 30px;
-}
-
-.range-scale {
   position: relative;
-  height: 2px;
-  width: 200px;
-  background-color: #DCDCDC;
-  margin-bottom: 33px;
 }
 
-.range-bar {
+.filter-range {
+  padding-bottom: 33px;
+}
+
+.range-base {
+  position: relative;
+}
+
+.range-base::before,
+.range-base::after {
+  content: "";
   position: absolute;
+  left: 0;
+  width: 200px;
   height: 2px;
+  background-color: #dcdcdc;
+}
+
+.range-base::before {
+  right: 0;
+  left: 0;
+}
+
+.range-base::after {
+  width: 119px;
   background-color: #000000;
 }
 
-.range-toggle {
+.range-content {
+  z-index: 1;
+  position: absolute;
+  top: -8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.range-button {
   position: relative;
   width: 18px;
   height: 18px;
-  background: #EBEBEB;
-  border: 2 solid #000000;
+  margin-bottom: 2px;
+  background-color: #ebebeb;
+  border: 2px solid #000000;
   border-radius: 50%;
   cursor: pointer;
-  top: -20px;
 }
 
-.range-toggle:hover {
-  opacity: 0.5;
+.range-button:hover {
+  border-color: rgba(0, 0, 0, 0.5);
 }
 
-.range-toggle:active {
-  opacity: 1;
+.range-button:active {
   background-color: #000000;
 }
 
-.range-toggle:focus-visible {
-  position: relative;
-  outline: none;
-}
-
-.range-toggle:focus-visible::before {
+.range-button:focus::before {
   content: "";
   position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  outline: 2px solid #af4fff;
-  outline-offset: 4px;
+  top: -6px;
+  right: -6px;
+  bottom: -6px;
+  left: -6px;
+  border: 2px solid #af4fff;
 }
 
-.toggle-min {
-  left: 0px;
-  transform: translateX(-50%);
+.range-content-min {
+  left: -14px;
 }
 
-.toggle-max {
-  left: 80px;
-  transform: translateX(50%);
+.range-content-max {
+  right: 54px;
 }
 
-.catalog-filter-price {
-  position: relative;
-  left: -15px;
-  top: -23px;
-  display: flex;
-  gap: 70px;
-}
-
-.filter-value {
-  color: rgb(0, 0, 0, 0.3);
-  font-family: "Rubik", sans-serif;
+.range-value {
+  padding-top: 2px;
   font-size: 14px;
   line-height: 20px;
-  text-align: center;
-  background-color: transparent;
-  border: none;
-  appearance: textfield;
-}
-
-.price-label {
-  display: block;
-  margin-top: 2px;
-  max-width: 75px;
-  font-size: 14px;
-  line-height: 18px;
   color: rgba(0, 0, 0, 0.3);
 }
 
-.price-label:focus-visible {
+.range-value:focus-visible {
   outline: 2px solid #af4fff;
-  outline-offset: 4px;
+  outline-offset: 2px;
 }
 
-.filter-price {
-  color: rgb(0, 0, 0, 0.3);
-  font-family: "Rubik", sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 20px;
-  text-align: right;
-}
-
-.price-input-min {
-  padding-left: 20px;
-}
-
-.price-input-max {
-  padding-left: 20px;
-  width: 70px;
-}
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  display: none;
-}
-
-input[type='number'] {
-  -moz-appearance: textfield;
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 12px;
 }
 
 .control {
@@ -1900,7 +1872,7 @@ input[type='number'] {
 }
 
 .control-label {
-  padding-left: 14px;
+  padding-left: 13px;
 }
 
 .control-label:hover {
@@ -1918,7 +1890,7 @@ input[type='number'] {
 .control-input {
   flex-shrink: 0;
   position: relative;
-  top: 2px;
+  top: 4px;
   width: 20px;
   height: 20px;
   margin: 0;
@@ -1974,8 +1946,8 @@ input[type='number'] {
   border-radius: 50%;
 }
 
-.catalog-filter-item:not(:last-child) {
-  margin-bottom: 17px;
+.catalog-filter-button {
+  min-width: 220px;
 }
 
 .sorting-container {

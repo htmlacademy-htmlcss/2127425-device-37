@@ -164,35 +164,27 @@
 
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
-              <fieldset class="catalog-filter-group">
-                <h3 class="catalog-filter-title">Стоимость</h3>
+              <fieldset class="catalog-filter-group filter-group-range">
+                <h3 class="catalog-filter-title catalog-range-title">Стоимость</h3>
+                <div class="filter-range range">
+                  <div class="range-container">
+                    <div class="range-base">
+                      <div class="range-content range-content-min">
+                        <input class="range-input visually-hidden" id="min" type="number" value="0" name="min" aria-label="Минимальное значение" tabindex="-1">
+                        <button class="range-button range-button-min" type="button">
+                          <span class="visually-hidden">Минимальное значение</span>
+                        </button>
+                        <label class="range-value" for="min" tabindex="0">от 0</label>
+                      </div>
 
-                <div class="range">
-                  <div class="range-scale">
-                    <div class="range-bar range-control" style="left: 0px; width: 110px;">
-                      <button class="range-toggle toggle-min" type="button">
-                        <span class="visually-hidden">Установить минимальный предел цены.</span>
-                      </button>
-
-                      <button class="range-toggle toggle-max" type="button">
-                        <span class="visually-hidden">Установить максимальный предел цены.</span>
-                      </button>
+                      <div class="range-content range-content-max">
+                        <input class="range-input visually-hidden" id="max" type="number" value="5000" name="max" aria-label="Максимальное значение" tabindex="-1">
+                        <button class="range-button range-button-max" type="button">
+                          <span class="visually-hidden">Максимальное значение</span>
+                        </button>
+                        <label class="range-value" for="max" tabindex="0">до 5000</label>
+                      </div>
                     </div>
-                  </div>
-
-                  <div class="catalog-filter-price">
-                    <label class="price-label">
-                      <input class="price-input price-input-min price-input-disabled visually-hidden" type="number"
-                        name="price-min" value="0" min="0">
-                      <span class="filter-price">от</span>
-                      <span class="filter-value">0</span>
-                    </label>
-                    <label class="price-label">
-                      <input class="price-input price-input-max price-input-disabled visually-hidden" type="number"
-                        name="price-max" value="5000" min="0">
-                      <span class="filter-price filter-price-max">до</span>
-                      <span class="filter-value">5000</span>
-                    </label>
                   </div>
                 </div>
               </fieldset>
