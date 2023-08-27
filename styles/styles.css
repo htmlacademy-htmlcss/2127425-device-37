@@ -623,6 +623,7 @@ img {
 
 .navigation-link {
   display: inline-block;
+  margin-right: -3.6px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -1491,18 +1492,15 @@ img {
 
 .footer-menu-list {
   display: flex;
-  gap: 32px;
+  gap: 35px;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.footer-menu-item:nth-of-type(1) {
-  margin-left: 3px;
 }
 
 .footer-menu-link {
   position: relative;
   color: #ffffff;
+  margin-right: -3.6px;
 }
 
 .footer-contacts {
