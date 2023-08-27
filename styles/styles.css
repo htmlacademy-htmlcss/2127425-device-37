@@ -332,6 +332,7 @@ img {
 .navigation-user-catalog {
   display: flex;
   justify-content: space-between;
+  gap: 28px;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -374,6 +375,10 @@ img {
   background-position: left center;
   background-size: 10px 12px;
   padding-left: 20px;
+}
+
+.user-list-compare-catalog {
+  padding-right: 5px;
 }
 
 .user-list-basket {
