@@ -2222,6 +2222,7 @@ img {
   gap: 25px;
   align-items: center;
   background-color: #ebebeb;
+  position: relative;
 }
 
 .pagination-list {
@@ -2247,8 +2248,10 @@ img {
 }
 
 .pagination-button-next {
-  padding: 0 45px;
   color: #000000;
+  padding: 25px 25px 25px 35px;
+  left: 10px;
+  position: relative;
 }
 
 .pagination-button:not(.pagination-button-current):hover {
