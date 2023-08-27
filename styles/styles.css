@@ -1207,7 +1207,7 @@ img {
   opacity: 0.3;
 }
 
-.services-button:focus {
+.services-button:focus-visible {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
@@ -1348,6 +1348,20 @@ img {
 .contacts-phone {
   font-style: normal;
   color: #444444;
+}
+
+.contacts-phone:hover {
+  color: #000000;
+}
+
+.contacts-phone:active {
+  color: #FFC700;
+}
+
+.contacts-phone:focus-visible {
+  color: #000000;
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 .contacts-button {
