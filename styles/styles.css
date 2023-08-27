@@ -986,13 +986,13 @@ img {
   opacity: 0.3;
 }
 
-.bullets-link:focus {
+.bullets-link:focus-visible {
   position: relative;
   opacity: 1;
   outline: none;
 }
 
-.bullets-link:focus::before {
+.bullets-link:focus-visible::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1037,7 +1037,7 @@ img {
   opacity: 0.3;
 }
 
-.categories-link:focus {
+.categories-link:focus-visible {
   opacity: 1;
   outline: 2px solid #af4fff;
   outline-offset: 2px;
@@ -1856,7 +1856,7 @@ img {
   background-color: #000000;
 }
 
-.range-button:focus::before {
+.range-button:focus-visible::before {
   content: "";
   position: absolute;
   top: -6px;
@@ -2005,6 +2005,7 @@ img {
 }
 
 .select-control:active:not(:disabled) {
+  outline: none;
   opacity: 0.3;
 }
 
@@ -2414,7 +2415,7 @@ img {
   background-color: #dcdcdc;
 }
 
-.modal-form-input:focus {
+.modal-form-input:focus-visible {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
@@ -2533,7 +2534,7 @@ img {
   opacity: 0.3;
 }
 
-.modal-change-button:focus {
+.modal-change-button:focus-visible {
   background-color: #f0f0f0;
   outline: 2px solid #af4fff;
 }
