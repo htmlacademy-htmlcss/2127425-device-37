@@ -662,19 +662,19 @@ img {
 
 .navigation-catalog-item {
   margin-right: auto;
-  margin-top: 10px;
   padding: 0;
 }
 
 .navigation-link-catalog {
   position: relative;
+  bottom: 2px;
   z-index: 1;
-  padding: 0 67px 16px 0;
+  padding: 16px 67px 13px 0;
 }
 
 .navigation-link-catalog span {
   position: absolute;
-  top: -15px;
+  top: 0;
   right: 0;
   width: 50px;
   height: 50px;
@@ -1370,7 +1370,7 @@ img {
 .mailing-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 142px 50px;
+  gap: 144px 50px;
   align-items: center;
 }
 
@@ -1741,7 +1741,7 @@ img {
 
 .catalog-filter {
   display: grid;
-  gap: 34px;
+  gap: 33px;
 }
 
 .filter-title {
@@ -1762,11 +1762,23 @@ img {
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.36px;
-  margin: 12px 0 16px 0;
+  margin: 13px 0 16px 0;
 }
 
 .catalog-range-title {
   margin-bottom: 28px;
+}
+
+.catalog-filter-title-bluetooth {
+  margin-top: 11px;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.catalog-filter-item-bluetooth:not(:last-child) {
+  margin-bottom: 15px;
 }
 
 .range {
@@ -1774,7 +1786,7 @@ img {
 }
 
 .filter-range {
-  padding-bottom: 33px;
+  padding-bottom: 34px;
 }
 
 .range-base {
@@ -1857,10 +1869,6 @@ img {
 .range-value:focus-visible {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
-}
-
-.catalog-filter-item:not(:last-child) {
-  margin-bottom: 12px;
 }
 
 .control {
@@ -1957,7 +1965,7 @@ img {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 19px 40px 16px 40px;
+  padding: 20px 40px 16px 40px;
 }
 
 .select-control {
@@ -2210,7 +2218,7 @@ img {
 
 .pagination {
   display: grid;
-  grid-template-columns: minmax(auto, 150px) 1fr minmax(auto, 150px);
+  grid-template-columns: minmax(auto, 150px) 1fr minmax(auto, 160px);
   gap: 25px;
   align-items: center;
   background-color: #ebebeb;
@@ -2239,7 +2247,7 @@ img {
 }
 
 .pagination-button-next {
-  padding: 0 35px;
+  padding: 0 45px;
   color: #000000;
 }
 
@@ -2269,7 +2277,6 @@ img {
 
 .pagination-link {
   display: flex;
-  padding-right: 10px;
   justify-content: center;
   align-items: center;
   min-width: 40px;
