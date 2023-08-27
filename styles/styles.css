@@ -1351,11 +1351,12 @@ img {
 }
 
 .contacts-phone:hover {
-  color: #000000;
+  color: #FFC700;
+
 }
 
 .contacts-phone:active {
-  color: #FFC700;
+  color: rgb(0, 0, 0, 0.3);
 }
 
 .contacts-phone:focus-visible {
