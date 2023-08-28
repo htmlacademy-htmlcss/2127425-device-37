@@ -2426,6 +2426,10 @@ img {
   border: 2px solid transparent;
 }
 
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
 .modal-form-input::placeholder {
   opacity: 0.3;
 }
@@ -2600,6 +2604,10 @@ img {
   border: none;
   border-radius: 50px;
   cursor: pointer;
+}
+
+.modal-tooltip:focus-within {
+  outline: none;
 }
 
 .modal-tooltip-toggle::after {
