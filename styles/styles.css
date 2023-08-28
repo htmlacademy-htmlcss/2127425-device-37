@@ -212,7 +212,9 @@ img {
   cursor: pointer;
 }
 
-/* .navigation-logo-inactive {
+/* Отключить взаимодействие с логотипом на главной странице
+
+.navigation-logo-inactive {
   pointer-events: none;
 } */
 
