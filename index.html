@@ -29,18 +29,18 @@
                 <input class="navigation-form-input" type="text" name="text" placeholder="Поиск по сайту">
                 <span class="visually-hidden">Введите название товара</span>
               </label>
-              <button class="button-navigation-form button-dark button" type="submit">Найти</button>
+              <button class="navigation-form-button button-dark button" type="submit">Найти</button>
             </form>
 
             <ul class="navigation-user list-reset">
-              <li class="navigation-user-item navigation-index-item">
-                <a class="navigation-user-link user-list-login link" href="#">Войти</a>
+              <li class="navigation-user-item user-login-item">
+                <a class="navigation-user-link user-link-login link" href="#">Войти</a>
               </li>
               <li class="navigation-user-item">
-                <a class="navigation-user-link user-list-compare link" href="#">Сравнить</a>
+                <a class="navigation-user-link user-link-compare link" href="#">Сравнить</a>
               </li>
-              <li class="navigation-user-item navigation-user-item-basket">
-                <a class="navigation-user-link user-list-basket link" href="#">Корзина
+              <li class="navigation-user-item user-item-basket">
+                <a class="navigation-user-link user-link-basket link" href="#">Корзина
                   <span class="visually-hidden">Товаров в корзине</span>
                   <span class="navigation-user-basket">2</span>
                 </a>
@@ -54,7 +54,7 @@
                           alt="Любительская селфи-палка.">
                         <h4 class="basket-title-link">Любительская<br> селфи-палка</h4>
                       </a>
-                      <button class="button-basket-delete" type="button">
+                      <button class="basket-button-delete" type="button">
                         <span class="visually-hidden">Удалить из корзины</span>
                       </button>
                     </li>
@@ -65,7 +65,7 @@
                           alt="Профессиональная селфи-палка">
                         <h4 class="basket-title-link">Профессиональная<br> селфи-палка</h4>
                       </a>
-                      <button class="button-basket-delete" type="button">
+                      <button class="basket-button-delete" type="button">
                         <span class="visually-hidden">Удалить из корзины</span>
                       </button>
                     </li>
@@ -77,7 +77,7 @@
                   </div>
 
                   <div class="basket-open">
-                    <a class="button basket-button" href="#">Открыть корзину</a>
+                    <a class="basket-button-open button" href="#">Открыть корзину</a>
                   </div>
 
                 </div>
@@ -87,8 +87,8 @@
 
           <div class="navigation">
             <ul class="navigation-list list-reset">
-              <li class="navigation-item navigation-catalog-item">
-                <a class="navigation-link link navigation-link-catalog" href="catalog.html">Каталог товаров
+              <li class="navigation-item navigation-item-catalog-open">
+                <a class="navigation-link link navigation-link-catalog-open" href="catalog.html">Каталог товаров
                   <span></span>
                 </a>
 
@@ -157,11 +157,11 @@
                 <a class="slider-button button button-light" href="#">Подробнее</a>
 
                 <dl class="slider-specifications-list">
-                  <div class="slider-stats-item">
+                  <div class="slider-specifications-item">
                     <dt class="slider-specifications-list-term">800 м</dt>
                     <dd class="slider-specifications-list-definition">Дальность полета</dd>
                   </div>
-                  <div class="slider-stats-item">
+                  <div class="slider-specifications-item">
                     <dt class="slider-specifications-list-term">50 м</dt>
                     <dd class="slider-specifications-list-definition">Радиус поражения</dd>
                   </div>
@@ -175,7 +175,6 @@
               </div>
 
               <div class="slider-content">
-                <span class="slider-number visually-hidden">02</span>
 
                 <p class="slider-title title">Худеем<br> правильно!</p>
                 <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
@@ -196,7 +195,6 @@
               </div>
 
               <div class="slider-content">
-                <span class="slider-number visually-hidden">03</span>
 
                 <p class="slider-title title">Делай селфи,<br> как Бен Стиллер! </p>
                 <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь
@@ -205,15 +203,15 @@
                 <a class="slider-button button button-light" href="#">Подробнее</a>
 
                 <dl class="slider-specifications-list">
-                  <div class="slider-stats-item">
+                  <div class="slider-specifications-item">
                     <dt class="slider-specifications-list-term">8,5 м</dt>
                     <dd class="slider-specifications-list-definition">Длина палки</dd>
                   </div>
-                  <div class="slider-stats-item">
+                  <div class="slider-specifications-item">
                     <dt class="slider-specifications-list-term">5 кг</dt>
                     <dd class="slider-specifications-list-definition">Вес палки</dd>
                   </div>
-                  <div class="slider-stats-item">
+                  <div class="slider-specifications-item">
                     <dt class="slider-specifications-list-term">Карбон</dt>
                     <dd class="slider-specifications-list-definition">Материал</dd>
                   </div>
@@ -223,11 +221,11 @@
           </ul>
 
           <div class="slider-arrow-controls">
-            <button class="slider-arrow slider-button-prev" type="button">
+            <button class="slider-arrow button-slider-prev" type="button">
               <span class="visually-hidden">Вернуться к предыдущему товару</span>
             </button>
 
-            <button class="slider-arrow slider-button-next" type="button">
+            <button class="slider-arrow button-slider-next" type="button">
               <span class="visually-hidden">Перейти к следующему товару</span>
             </button>
           </div>
@@ -359,7 +357,7 @@
               проверить
               работоспособность покупки. </p>
 
-            <div class="about-address">
+            <div class="address--wrapper">
               <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
               <address class="contacts-address">
                 <p class="contacts-description">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
@@ -393,7 +391,7 @@
             <label class="mailing-form-label">
               <input class="mailing-form-input" type="email" name="email" placeholder="Ваш e-mail" required>
             </label>
-            <button class="button-mailing-form button button-dark" type="submit">Подписаться</button>
+            <button class="mailing-form-button button button-dark" type="submit">Подписаться</button>
           </form>
 
           <span class="mailing-info">Это бесплатно</span>
