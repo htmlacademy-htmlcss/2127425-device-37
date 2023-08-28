@@ -359,7 +359,7 @@ img {
   outline-offset: 2px;
 }
 
-.user-list-login {
+.user-link-login {
   display: block;
   background-image: url("../images/user.svg");
   background-repeat: no-repeat;
@@ -368,7 +368,7 @@ img {
   padding-left: 28px;
 }
 
-.user-list-compare {
+.user-link-compare {
   display: block;
   background-image: url("../images/compare.svg");
   background-repeat: no-repeat;
@@ -377,11 +377,11 @@ img {
   padding-left: 20px;
 }
 
-.user-list-compare-catalog {
+.user-link-compare-catalog {
   padding-right: 5px;
 }
 
-.user-list-basket {
+.user-link-basket {
   display: block;
   background-image: url("../images/basket/basket.svg");
   background-repeat: no-repeat;
@@ -391,26 +391,26 @@ img {
   position: relative;
 }
 
-.user-list-logout {
+.user-link-logout {
   display: block;
   opacity: 0.3;
 }
 
-.user-list-logout:hover:not(:disabled) {
+.user-link-logout:hover:not(:disabled) {
   opacity: 0.6;
 }
 
-.user-list-logout:active:not(:disabled) {
+.user-link-logout:active:not(:disabled) {
   opacity: 1;
 }
 
-.user-list-logout:focus-visible {
+.user-link-logout:focus-visible {
   opacity: 1;
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
-.user-list-logout:disabled {
+.user-link-logout:disabled {
   opacity: 0.1;
   pointer-events: none;
 }
@@ -430,7 +430,7 @@ img {
   padding: 3px 6px 2px 6px;
 }
 
-.navigation-user-item-basket {
+.user-item-basket {
   display: block;
   position: relative;
 }
@@ -458,8 +458,8 @@ img {
   display: block;
 }
 
-.navigation-user-item-basket:hover .basket-container,
-.navigation-user-item-basket:focus-within .basket-container {
+.user-item-basket:hover .basket-container,
+.user-item-basket:focus-within .basket-container {
   display: block;
 }
 
