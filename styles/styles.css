@@ -1500,6 +1500,14 @@ img {
   outline-offset: 2px;
 }
 
+@-moz-document url-prefix() {
+  .footer-link:focus-visible {
+    padding-top: 15px;
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
+  }
+}
+
 .footer-address-text {
   color: #ffffff;
   font-family: inherit;
@@ -1866,6 +1874,12 @@ img {
   border: 2px solid #af4fff;
 }
 
+@-moz-document url-prefix() {
+  .range-button:focus-visible {
+    outline: none;
+  }
+}
+
 .range-content-min {
   left: -14px;
 }
@@ -2230,6 +2244,11 @@ img {
   background-color: #ffffff;
   margin: 44px 0;
   padding: 15px 5px 15px 8px;
+}
+
+.button-product-list:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 .pagination {
